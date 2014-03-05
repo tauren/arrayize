@@ -14,11 +14,13 @@ Usage:
 ```javascript
 var arrayize = require('arrayize');
 
-console.log( arrayize() );              // []
-console.log( arrayize('foo') );         // ['foo']
-console.log( arrayize(['foo']) );       // ['foo']
-console.log( arrayize(3) );             // [3]
-console.log( arrayize(function() {}) ); // [function]
+arrayize();              // => []
+arrayize('foo');         // => [ 'foo' ]
+arrayize(['foo']);       // => [ 'foo' ]
+arrayize(3);             // => [ 3 ]
+arrayize(function() {}); // => [ [Function] ]
+arrayize(new Date());    // => [ Wed Mar 05 2014 03:29:26 GMT-0800 (PST) ]
+arrayize(/foo/);         // => [ /foo/ ]
 ```
 
 To run tests:
