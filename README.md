@@ -15,9 +15,11 @@ Usage:
 var arrayize = require('arrayize');
 
 arrayize();              // => []
+arrayize(null);          // => []
 arrayize('foo');         // => [ 'foo' ]
 arrayize(['foo']);       // => [ 'foo' ]
 arrayize(3);             // => [ 3 ]
+arrayize({foo:'bar'});   // => [ { foo: 'bar' } ]
 arrayize(function() {}); // => [ [Function] ]
 arrayize(new Date());    // => [ Wed Mar 05 2014 03:29:26 GMT-0800 (PST) ]
 arrayize(/foo/);         // => [ /foo/ ]

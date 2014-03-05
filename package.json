@@ -1,6 +1,6 @@
 {
   "name": "arrayize",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Return input if it is an array, otherwise return input wrapped in an array. If input is null or undefined, return empty array.",
   "main": "index.js",
   "scripts": {
